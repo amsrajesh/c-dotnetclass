@@ -5,3 +5,10 @@ C:\Users\NABERLY 5\Documents\GitHub\c-dotnetclass\projectA\ConsoleApp1\obj\Debug
 C:\Users\NABERLY 5\Documents\GitHub\c-dotnetclass\projectA\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 C:\Users\NABERLY 5\Documents\GitHub\c-dotnetclass\projectA\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 C:\Users\NABERLY 5\Documents\GitHub\c-dotnetclass\projectA\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\GitHub\c-dotnetclass\projectA\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\GitHub\c-dotnetclass\projectA\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\GitHub\c-dotnetclass\projectA\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\GitHub\c-dotnetclass\projectA\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\GitHub\c-dotnetclass\projectA\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\GitHub\c-dotnetclass\projectA\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\GitHub\c-dotnetclass\projectA\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
