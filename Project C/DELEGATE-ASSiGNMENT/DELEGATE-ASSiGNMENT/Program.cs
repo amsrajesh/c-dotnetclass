@@ -29,9 +29,9 @@ namespace ConsoleApplication1
             Console.Write("Input the number : ");
             x = Convert.ToInt32(Console.ReadLine());
             Console.Write("\n");
-            for (j = 1; j <= j * x; j++)
+            for (j = 15; j <= x; j++)
             {
-                Console.Write("{0} \n", x);
+                Console.Write("{2} \n",x*j, j,x);
                 Console.ReadLine();
             }
         }

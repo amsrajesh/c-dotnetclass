@@ -1,23 +1,39 @@
 using System;
-static void PrintNumbers()
+namespace ConsoleApplication1
 {
-    for (int i = 1; i <= 100; i++)
+    delegate void Factorial(int a);
+    delegate void Factorial5(int b);
+    delegate void Factorial10(int c);
+    class Program
     {
-        if (i % 3 == 0 && i % 5 == 0)
+        static void Main(string[] args)
         {
-            Console.WriteLine(i + " FizzBuzz");
-        }
-        else if (i % 3 == 0)
-        {
-            Console.WriteLine(i + " Fizz");
-        }
-        else if (i % 5 == 0)
-        {
-            Console.WriteLine(i + " Buzz");
-        }
-        else
-        {
-            Console.WriteLine(i);
+
+            Factorial delgateObj = delegate (int n)
+            {
+                int fact = 1;
+                for (int i = 1; i <= n; i++)
+                {
+                    fact = fact * i;
+                }
+                Console.WriteLine("Factorial of {0} is =: {1}", n, fact);
+            };
+            Console.WriteLine("Enter the number to find the factorial");
+
+            int no = Convert.ToInt32(Console.ReadLine());
+            delgateObj(no);
+            Console.ReadLine();
+
+            int j, x;
+
+            Console.Write("Input the number : ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\n");
+            for (j = 1; j <= x; j++)
+            {
+                Console.Write("{2} \n", x * j, j, x);
+                Console.ReadLine();
+            }
         }
     }
 }
