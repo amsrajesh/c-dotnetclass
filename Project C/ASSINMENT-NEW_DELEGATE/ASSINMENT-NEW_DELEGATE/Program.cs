@@ -1,9 +1,8 @@
 using System;
 namespace ConsoleApplication1
 {
-    delegate void Factorial(int a);
-    delegate void Factorial5(int b);
-    delegate void Factorial10(int c);
+    delegate void numberdel(int a,int b );
+   
     class Program
     {
         static void Main(string[] args)
