@@ -16,6 +16,11 @@ enum Year
     Second,
     Third
 }
+public class Program
+{
+    public static String Name { get; private set; }
+    public static int Roll { get; private set; }
+}
 public class Student
 {
     int Roll;
@@ -23,18 +28,15 @@ public class Student
     Sex Sex;
     Department Dep;
     Year Year;
-    public class Program
-    {
-        public static String Name { get; private set; }
-        public static int Roll { get; private set; }
+   
         public static void Main()
         {
-            Console.WriteLine("Enter your Roll:");
-            int Roll = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter your Name:");
-            Console.WriteLine("Your Name is:" + Name);
-            Console.ReadLine();
-            Student s1 = new Student();
+        Student s1 = new Student();   
+        s1.Roll = 101;
+        s1.Name = "ARJUN";
+        Console.WriteLine(s1.Roll);
+        Console.WriteLine(s1.Name);
+        
             Sex s2 = Sex.Male;
             Sex s3 = Sex.Female;
             Console.WriteLine("Sex: {0}", Enum.Format(typeof(Sex), s2, "d"));
@@ -51,4 +53,4 @@ public class Student
             Console.ReadLine();
         }
     }
-}
+
