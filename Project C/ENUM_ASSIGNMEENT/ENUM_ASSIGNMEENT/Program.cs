@@ -16,7 +16,6 @@ public enum Year
     Second,
     Third
 }
-
 public class Student
 {
     //we are declaring data are private so that it can't be access outside
@@ -33,51 +32,50 @@ public class Student
         Console.WriteLine("Enter your Name:");
         Name = Console.ReadLine();
         Console.WriteLine("enter sex");
-        Sex  = (Sex)Enum.Parse(typeof(Sex),Console.ReadLine());  // Animal.Dog
-        Dep=(Department)Enum.Parse(typeof(Department),Console.ReadLine());
-        Year=(Year)Enum.Parse(typeof(Department),Console.ReadLine());
-
-
+        Sex = (Sex)Enum.Parse(typeof(Sex), Console.ReadLine());  // Animal.Dog
+        Console.WriteLine("enter Department");
+        Dep = (Department)Enum.Parse(typeof(Department), Console.ReadLine());
+        Console.WriteLine("enter Year");
+        Year = (Year)Enum.Parse(typeof(Department), Console.ReadLine());
     }
-    public void AssignStudent(int Roll,string Name,Sex Sex, Department Dept, Year Year)
+    public void AssignStudent(int Roll, string Name, Sex Sex, Department Dept, Year Year)
     {
-       this.Roll = Roll;//becasue both class data variable  and function argument are same name we want add 'this'
-       this.Name = Name;
-       this.Sex = Sex;
+        this.Roll = Roll;//becasue both class data variable  and function argument are same name we want add 'this'
+        this.Name = Name;
+        this.Sex = Sex;
         Dep = Dept;//because both class data variable and function argument are not same we no need  use add 'this'
-       this.Year = Year;
-        
-        
-
+        this.Year = Year;
     }
     public void Display()
     {
         Console.WriteLine("Roll:{0}", Roll);
-        Console.WriteLine("Name:{0}",Name);
+        Console.WriteLine("Name:{0}", Name);
         Console.WriteLine("Sex:{0}", Sex);
         Console.WriteLine("Department:{0}", Dep);
         Console.WriteLine("Year:{0}", Year);
+        Console.ReadLine();
 
     }
-    
+    public string GetName()
+    {
+        return Name;
 
+
+    }
 
 }
-    public class Program
+public class Program
+{
+
+    public static void Main()
     {
-        public static String Name { get; private set; }
-        public static int Roll { get; private set; }
-
-        public static void Main()
-        {
-
-
-            
-        
-
-
-           
-        }
+        Student s1 = new Student();
+        s1.ReadStudent();
+        s1.Display();
+        Student s2 = new Student();
+        s2.AssignStudent(10, " Swetha", Sex.Female, Department.Electronics, Year.Second);
+        s2.Display();
+        Console.WriteLine(s2.GetName());
+        Console.ReadLine();
     }
-
-
+}
